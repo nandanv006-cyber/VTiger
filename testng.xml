@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Suite">
+  <test thread-count="1" parallel="tests" name="Test">
+    <classes>
+      <class name="products.EditProductsTest"/>
+      <class name="calender.AddEventInTheCalender"/>
+      <class name="organization.CreateOrganizationTypeWithIndustryTypeTest"/>
+      <class name="opportunities.DeleteOpportunitesTest"/>
+      <class name="contacts.CreateContactWithOrganizationName"/>
+      <class name="organization.CreateOrganizationWithMandatoryFieldsTest"/>
+      <class name="troubletickets.CreateTroubleTicketWithCategoryTest"/>
+      <class name="contacts.CreateContactsWithMandatoryFields"/>
+      <class name="opportunities.CreateOpportunitiesWithMandatoryFieldsTest"/>
+      <class name="products.AddNewProductInformationTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

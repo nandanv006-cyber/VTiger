@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="classes" name="Suite">
+
+<listeners>
+<listener class-name="genericUtilities.ListenersImplimentationClass"></listener></listeners>
+  <test name="Test">
+  <groups>
+  <run>
+  <include name="smoke"></include>
+  <include name="regression"></include>
+  <include name="functional"></include>
+  </run>
+  </groups>
+    <classes>
+      
+      <class name="organization.Organization"/>
+      <class name="products.product"/>
+    </classes>
+    </test>
+    <test name="Test2">
+    
+    <packages>
+    <package name="opportunities.*"></package>
+    <package name="contacts.*"></package>
+    <package name="calender.*"></package>
+    </packages>
+     
+    </test>
+  
+</suite> <!-- Suite -->
