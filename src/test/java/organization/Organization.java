@@ -32,7 +32,7 @@ public class Organization extends BaseClass
 //		Enter valid data inside mandatory fields 
 		CreateNewOrganizationPage cno = new CreateNewOrganizationPage(driver);
 		cno.createOrgMandateFiled(exp);
-		Assert.fail();
+		
 
 //		Verification
 		String actual = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
