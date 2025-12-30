@@ -22,6 +22,7 @@
           <include name="loginToAppln"/>
           <include name="disConnectToDB"/>
           <include name="createOrganizationWithMandatoryFieldsTest"/>
+          <include name="createOrganizationTypeWithIndustryTypeTest"/>
         </methods>
       </class> <!-- organization.Organization -->
     </classes>
