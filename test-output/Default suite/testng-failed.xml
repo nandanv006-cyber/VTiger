@@ -5,8 +5,8 @@
     <classes>
       <class name="organization.Organization">
         <methods>
-          <include name="logoutFromAppln"/>
           <include name="logout"/>
+          <include name="logoutFromAppln"/>
           <include name="connectToDB"/>
           <include name="launchBrowser"/>
           <include name="loginToAppln"/>
