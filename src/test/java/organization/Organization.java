@@ -20,6 +20,8 @@ public class Organization extends BaseClass
 		int ran = jLib.getRandomNumber();
 		String orgName = eLib.readDataFromExcel("Organization", 1, 0);
 		String exp =orgName+ran; 
+		
+		
 
 //		Navigate to Home Page click on Organization Link
 		HomePage hp = new HomePage(driver);
