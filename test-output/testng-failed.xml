@@ -3,7 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="organization.Organization">
+      <class name="opportunities.Opportunity">
         <methods>
           <include name="logout"/>
           <include name="logoutFromAppln"/>
@@ -11,9 +11,9 @@
           <include name="launchBrowser"/>
           <include name="loginToAppln"/>
           <include name="disConnectToDB"/>
-          <include name="createOrganizationWithMandatoryFieldsTest"/>
+          <include name="deleteOpportunitesTest"/>
         </methods>
-      </class> <!-- organization.Organization -->
+      </class> <!-- opportunities.Opportunity -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -6,10 +6,11 @@ import ObjectRepo.CalenderPage;
 import ObjectRepo.HomePage;
 import genericUtilities.BaseClass;
 import genericUtilities.ExcelUtils;
+import genericUtilities.RetryImplimentationClass;
 @Listeners
 public class Calender extends BaseClass
 {
-	@Test(groups = "regression")
+	@Test(groups = "regression",retryAnalyzer = RetryImplimentationClass.class)
 	public  void addEventInTheCalender() throws Exception 
 	{	
 //		TC_11
@@ -20,6 +21,7 @@ public class Calender extends BaseClass
 		hp.clickCalenderLink();
 		CalenderPage cp = new CalenderPage(driver);
 		cp.addAnEventInDay(driver, eventname, descripion);
+		System.out.println("checking this works");
 	}
 
 }
