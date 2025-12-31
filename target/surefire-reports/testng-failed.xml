@@ -4,27 +4,19 @@
   <listeners>
     <listener class-name="genericUtilities.ListenersImplimentationClass"/>
   </listeners>
-  <test thread-count="2" parallel="classes" name="Test(failed)" verbose="0">
-    <groups>
-      <run>
-        <include name="smoke"/>
-        <include name="regression"/>
-        <include name="functional"/>
-      </run>
-    </groups>
+  <test thread-count="2" parallel="classes" name="Test2(failed)" verbose="0">
     <classes>
-      <class name="organization.Organization">
+      <class name="opportunities.Opportunity">
         <methods>
-          <include name="logoutFromAppln"/>
           <include name="logout"/>
+          <include name="logoutFromAppln"/>
           <include name="connectToDB"/>
           <include name="launchBrowser"/>
           <include name="loginToAppln"/>
           <include name="disConnectToDB"/>
-          <include name="createOrganizationWithMandatoryFieldsTest"/>
-          <include name="createOrganizationTypeWithIndustryTypeTest"/>
+          <include name="deleteOpportunitesTest"/>
         </methods>
-      </class> <!-- organization.Organization -->
+      </class> <!-- opportunities.Opportunity -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->
