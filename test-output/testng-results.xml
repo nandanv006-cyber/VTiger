@@ -2,16 +2,43 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-23T21:44:36 IST" name="Default suite" finished-at="2025-12-23T21:44:36 IST" duration-ms="117">
+  <suite started-at="2025-12-31T10:02:17 IST" name="Default suite" finished-at="2025-12-31T10:02:33 IST" duration-ms="15523">
     <groups>
+      <group name="regression">
+        <method signature="Calender.addEventInTheCalender()[pri:0, instance:calender.Calender@543295b0]" name="addEventInTheCalender" class="calender.Calender"/>
+      </group> <!-- regression -->
     </groups>
-    <test started-at="2025-12-23T21:44:36 IST" name="Default test" finished-at="2025-12-23T21:44:36 IST" duration-ms="117">
-      <class name="testNG_Practice.P1">
-        <test-method signature="m1()[pri:0, instance:testNG_Practice.P1@576d5deb]" started-at="2025-12-23T21:44:36 IST" name="m1" finished-at="2025-12-23T21:44:36 IST" duration-ms="46" status="PASS">
+    <test started-at="2025-12-31T10:02:17 IST" name="Default test" finished-at="2025-12-31T10:02:33 IST" duration-ms="15523">
+      <class name="calender.Calender">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:17 IST" name="connectToDB" finished-at="2025-12-31T10:02:17 IST" duration-ms="238" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- m1 -->
-      </class> <!-- testNG_Practice.P1 -->
+        </test-method> <!-- connectToDB -->
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:17 IST" name="launchBrowser" finished-at="2025-12-31T10:02:22 IST" duration-ms="5199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:22 IST" name="loginToAppln" finished-at="2025-12-31T10:02:24 IST" duration-ms="1838" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToAppln -->
+        <test-method signature="addEventInTheCalender()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:24 IST" name="addEventInTheCalender" finished-at="2025-12-31T10:02:30 IST" duration-ms="5385" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addEventInTheCalender -->
+        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:30 IST" name="logoutFromAppln" finished-at="2025-12-31T10:02:33 IST" duration-ms="2941" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logoutFromAppln -->
+        <test-method is-config="true" signature="logout()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:33 IST" name="logout" finished-at="2025-12-31T10:02:33 IST" duration-ms="127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method is-config="true" signature="disConnectToDB()[pri:0, instance:calender.Calender@543295b0]" started-at="2025-12-31T10:02:33 IST" name="disConnectToDB" finished-at="2025-12-31T10:02:33 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disConnectToDB -->
+      </class> <!-- calender.Calender -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
