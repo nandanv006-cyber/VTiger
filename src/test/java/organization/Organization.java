@@ -20,6 +20,8 @@ public class Organization extends BaseClass
 		int ran = jLib.getRandomNumber();
 		String orgName = eLib.readDataFromExcel("Organization", 1, 0);
 		String exp =orgName+ran; 
+		
+		
 
 //		Navigate to Home Page click on Organization Link
 		HomePage hp = new HomePage(driver);
@@ -32,7 +34,7 @@ public class Organization extends BaseClass
 //		Enter valid data inside mandatory fields 
 		CreateNewOrganizationPage cno = new CreateNewOrganizationPage(driver);
 		cno.createOrgMandateFiled(exp);
-		Assert.fail();
+		
 
 //		Verification
 		String actual = driver.findElement(By.xpath("//span[@class='dvHeaderText']")).getText();
