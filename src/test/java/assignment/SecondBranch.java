@@ -8,6 +8,9 @@ public class SecondBranch
 	public void m1()
 	{
 		System.out.println("2nd b");
+		System.out.println("2nd-br");
+		System.out.println("2nd branch");
+		
 	}
 
 }
