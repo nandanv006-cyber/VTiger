@@ -16,7 +16,7 @@ public class product extends BaseClass{
 	public void addNewProductInformationTest() throws Exception 
 	{	
 //		TC_07
-		
+		System.out.println("start");
 		ExcelUtils eLib = new ExcelUtils();
 		String pathImg="C:\\Users\\Nandan V\\Downloads\\111868_SP781-iPhone-xr.jpg";
 		String Product = eLib.readDataFromExcel("Products", 1, 0);
@@ -65,3 +65,4 @@ public class product extends BaseClass{
 	
 
 }
+
