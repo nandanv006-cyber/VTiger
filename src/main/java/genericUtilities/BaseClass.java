@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
+import org.testng.xml.XmlTest;
 
 //import org.testng.annotations.Parameters; 
 import ObjectRepo.HomePage;
@@ -34,10 +35,12 @@ public class BaseClass {
 	{
 		dLib.connectToDB();
 	}
-	@Parameters("BROWSER")
+	//@Parameters("BROWSER")
+	//String BROWSER
 	@BeforeClass(alwaysRun = true)
-	public void launchBrowser(String BROWSER) throws Throwable
+	public void launchBrowser(XmlTest test) throws Throwable
 	{
+		String BROWSER = test.getParameter("browser");
 //		String BROWSER=fLib.readDataFromPropertyFile("browser");
 		String URL=fLib.readDataFromPropertyFile("url");
 		if(BROWSER.equalsIgnoreCase("chrome"))
