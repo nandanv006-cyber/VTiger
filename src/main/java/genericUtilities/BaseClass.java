@@ -38,9 +38,9 @@ public class BaseClass {
 	//@Parameters("BROWSER")
 	//String BROWSER
 	@BeforeClass(alwaysRun = true)
-	public void launchBrowser(XmlTest test) throws Throwable
+	public void launchBrowser() throws Throwable
 	{
-		String BROWSER = test.getParameter("browser");
+		String BROWSER = System.getProperty("browser");
 //		String BROWSER=fLib.readDataFromPropertyFile("browser");
 		String URL=fLib.readDataFromPropertyFile("url");
 		if(BROWSER.equalsIgnoreCase("chrome"))
