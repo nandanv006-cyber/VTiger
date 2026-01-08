@@ -9,6 +9,22 @@
           <include name="logout"/>
           <include name="logoutFromAppln"/>
           <include name="connectToDB"/>
+          <include name="launchBrowser"/>
+          <include name="addEventInTheCalender"/>
+          <include name="loginToAppln"/>
+          <include name="disConnectToDB"/>
+        </methods>
+      </class> <!-- calender.Calender -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="3" parallel="tests" name="Test1(failed)" verbose="0">
+    <parameter name="BROWSER" value="chrome"/>
+    <classes>
+      <class name="calender.Calender">
+        <methods>
+          <include name="logout"/>
+          <include name="logoutFromAppln"/>
+          <include name="connectToDB"/>
           <include name="addEventInTheCalender"/>
           <include name="launchBrowser"/>
           <include name="loginToAppln"/>
@@ -16,5 +32,5 @@
         </methods>
       </class> <!-- calender.Calender -->
     </classes>
-  </test> <!-- Test2(failed) -->
+  </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
