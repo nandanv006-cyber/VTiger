@@ -43,7 +43,10 @@ public class BaseClass {
 		if(BROWSER.equalsIgnoreCase("chrome"))
 			driver = new ChromeDriver();
 		else if (BROWSER.equalsIgnoreCase("firefox"))
+		{
 			driver = new FirefoxDriver();
+			System.out.println("firefox");
+		}
 		else if (BROWSER.equalsIgnoreCase("edge"))
 			driver = new EdgeDriver();
 		driver.get(URL);
