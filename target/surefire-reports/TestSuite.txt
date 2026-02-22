@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 10, Failures: 8, Errors: 0, Skipped: 2, Time elapsed: 2.064 s <<< FAILURE! -- in TestSuite
-calender.Calender.launchBrowser[org.testng.xml.XmlTest@3207f40d](0) -- Time elapsed: 1.574 s <<< FAILURE!
+Tests run: 10, Failures: 8, Errors: 0, Skipped: 2, Time elapsed: 2.239 s <<< FAILURE! -- in TestSuite
+calender.Calender.launchBrowser -- Time elapsed: 1.696 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null
 	at genericUtilities.BaseClass.launchBrowser(BaseClass.java:46)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -24,7 +24,7 @@ java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-calender.Calender.launchBrowser[org.testng.xml.XmlTest@25029bed](0) -- Time elapsed: 1.576 s <<< FAILURE!
+calender.Calender.launchBrowser -- Time elapsed: 1.699 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null
 	at genericUtilities.BaseClass.launchBrowser(BaseClass.java:46)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -46,7 +46,7 @@ java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" 
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-calender.Calender.loginToAppln -- Time elapsed: 1.646 s <<< FAILURE!
+calender.Calender.loginToAppln -- Time elapsed: 1.785 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
@@ -78,7 +78,7 @@ java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-calender.Calender.loginToAppln -- Time elapsed: 1.646 s <<< FAILURE!
+calender.Calender.loginToAppln -- Time elapsed: 1.786 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
@@ -110,7 +110,7 @@ java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-calender.Calender.logoutFromAppln -- Time elapsed: 0.022 s <<< FAILURE!
+calender.Calender.logoutFromAppln -- Time elapsed: 0.020 s <<< FAILURE!
 java.lang.IllegalArgumentException: Driver must be set
 	at org.openqa.selenium.internal.Require.nonNull(Require.java:63)
 	at org.openqa.selenium.interactions.Actions.<init>(Actions.java:67)
@@ -180,7 +180,7 @@ java.lang.IllegalArgumentException: Driver must be set
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-calender.Calender.logout -- Time elapsed: 0.033 s <<< FAILURE!
+calender.Calender.logout -- Time elapsed: 0.043 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
 	at genericUtilities.BaseClass.logout(BaseClass.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
@@ -203,7 +203,7 @@ java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.qui
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 	at java.base/java.lang.Thread.run(Thread.java:1583)
 
-calender.Calender.logout -- Time elapsed: 0.033 s <<< FAILURE!
+calender.Calender.logout -- Time elapsed: 0.045 s <<< FAILURE!
 java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null
 	at genericUtilities.BaseClass.logout(BaseClass.java:79)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)

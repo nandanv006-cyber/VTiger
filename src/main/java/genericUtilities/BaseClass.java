@@ -35,12 +35,12 @@ public class BaseClass {
 	{
 		dLib.connectToDB();
 	}
-	//@Parameters("BROWSER")
+	@Parameters("BROWSER")
 	//String BROWSER
 	@BeforeClass(alwaysRun = true)
-	public void launchBrowser() throws Throwable
+	public void launchBrowser(String BROWSER) throws Throwable
 	{
-		String BROWSER = System.getProperty("browser");
+//		String BROWSER = System.getProperty("browser");
 //		String BROWSER=fLib.readDataFromPropertyFile("browser");
 		String URL=fLib.readDataFromPropertyFile("url");
 		if(BROWSER.equalsIgnoreCase("chrome"))

@@ -2,27 +2,20 @@
 <testng-results ignored="0" total="2" passed="0" failed="0" skipped="2">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-01-08T12:53:55 IST" name="Suite" finished-at="2026-01-08T12:53:55 IST" duration-ms="189">
+  <suite started-at="2026-01-08T12:58:57 IST" name="Suite" finished-at="2026-01-08T12:58:57 IST" duration-ms="206">
     <groups>
       <group name="regression">
         <method signature="Calender.addEventInTheCalender()[pri:0, instance:calender.Calender@294425a7]" name="addEventInTheCalender" class="calender.Calender"/>
         <method signature="Calender.addEventInTheCalender()[pri:0, instance:calender.Calender@351d00c0]" name="addEventInTheCalender" class="calender.Calender"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-01-08T12:53:55 IST" name="Test2" finished-at="2026-01-08T12:53:55 IST" duration-ms="189">
+    <test started-at="2026-01-08T12:58:57 IST" name="Test2" finished-at="2026-01-08T12:58:57 IST" duration-ms="206">
       <class name="calender.Calender">
-        <test-method is-config="true" signature="connectToDB()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:54 IST" name="connectToDB" finished-at="2026-01-08T12:53:55 IST" duration-ms="589" status="PASS">
+        <test-method is-config="true" signature="connectToDB()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:56 IST" name="connectToDB" finished-at="2026-01-08T12:58:57 IST" duration-ms="630" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- connectToDB -->
-        <test-method is-config="true" signature="launchBrowser(org.testng.xml.XmlTest)[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:55 IST" name="launchBrowser" finished-at="2026-01-08T12:53:55 IST" duration-ms="18" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.xml.XmlTest@25029bed]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:57 IST" name="launchBrowser" finished-at="2026-01-08T12:58:57 IST" duration-ms="4" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null]]>
@@ -54,7 +47,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:55 IST" name="loginToAppln" finished-at="2026-01-08T12:53:55 IST" duration-ms="51" status="FAIL">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:57 IST" name="loginToAppln" finished-at="2026-01-08T12:58:57 IST" duration-ms="61" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
@@ -96,22 +89,32 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method signature="addEventInTheCalender()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:55 IST" name="addEventInTheCalender" finished-at="2026-01-08T12:53:55 IST" duration-ms="0" status="SKIP">
+        <test-method signature="addEventInTheCalender()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:57 IST" name="addEventInTheCalender" finished-at="2026-01-08T12:58:57 IST" duration-ms="1" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null
-at genericUtilities.BaseClass.launchBrowser(BaseClass.java:46)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+at ObjectRepo.LoginPage.login(LoginPage.java:34)
+at genericUtilities.BaseClass.loginToAppln(BaseClass.java:67)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -128,7 +131,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEventInTheCalender -->
-        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:55 IST" name="logoutFromAppln" finished-at="2026-01-08T12:53:55 IST" duration-ms="17" status="FAIL">
+        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:57 IST" name="logoutFromAppln" finished-at="2026-01-08T12:58:57 IST" duration-ms="15" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Driver must be set]]>
@@ -173,7 +176,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromAppln -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:55 IST" name="logout" finished-at="2026-01-08T12:53:55 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="logout()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:57 IST" name="logout" finished-at="2026-01-08T12:58:57 IST" duration-ms="3" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
@@ -206,22 +209,15 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logout -->
-        <test-method is-config="true" signature="disConnectToDB()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:53:55 IST" name="disConnectToDB" finished-at="2026-01-08T12:53:55 IST" duration-ms="26" status="PASS">
+        <test-method is-config="true" signature="disConnectToDB()[pri:0, instance:calender.Calender@351d00c0]" started-at="2026-01-08T12:58:57 IST" name="disConnectToDB" finished-at="2026-01-08T12:58:57 IST" duration-ms="20" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- disConnectToDB -->
       </class> <!-- calender.Calender -->
     </test> <!-- Test2 -->
-    <test started-at="2026-01-08T12:53:55 IST" name="Test1" finished-at="2026-01-08T12:53:55 IST" duration-ms="189">
+    <test started-at="2026-01-08T12:58:57 IST" name="Test1" finished-at="2026-01-08T12:58:57 IST" duration-ms="206">
       <class name="calender.Calender">
-        <test-method is-config="true" signature="launchBrowser(org.testng.xml.XmlTest)[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:53:55 IST" name="launchBrowser" finished-at="2026-01-08T12:53:55 IST" duration-ms="18" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.xml.XmlTest@3207f40d]]>
-              </value>
-            </param>
-          </params>
+        <test-method is-config="true" signature="launchBrowser()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:58:57 IST" name="launchBrowser" finished-at="2026-01-08T12:58:57 IST" duration-ms="5" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null]]>
@@ -253,7 +249,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:53:55 IST" name="loginToAppln" finished-at="2026-01-08T12:53:55 IST" duration-ms="52" status="FAIL">
+        <test-method is-config="true" signature="loginToAppln()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:58:57 IST" name="loginToAppln" finished-at="2026-01-08T12:58:57 IST" duration-ms="61" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
@@ -295,22 +291,32 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToAppln -->
-        <test-method signature="addEventInTheCalender()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:53:55 IST" name="addEventInTheCalender" finished-at="2026-01-08T12:53:55 IST" duration-ms="0" status="SKIP">
+        <test-method signature="addEventInTheCalender()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:58:57 IST" name="addEventInTheCalender" finished-at="2026-01-08T12:58:57 IST" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
-              <![CDATA[Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null]]>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "String.equalsIgnoreCase(String)" because "BROWSER" is null
-at genericUtilities.BaseClass.launchBrowser(BaseClass.java:46)
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy14.sendKeys(Unknown Source)
+at ObjectRepo.LoginPage.login(LoginPage.java:34)
+at genericUtilities.BaseClass.loginToAppln(BaseClass.java:67)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
 at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
-at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at org.testng.internal.invokers.TestInvoker.runConfigMethods(TestInvoker.java:833)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:600)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 at org.testng.TestRunner.privateRun(TestRunner.java:739)
 at org.testng.TestRunner.run(TestRunner.java:614)
@@ -327,7 +333,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEventInTheCalender -->
-        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:53:55 IST" name="logoutFromAppln" finished-at="2026-01-08T12:53:55 IST" duration-ms="18" status="FAIL">
+        <test-method is-config="true" signature="logoutFromAppln()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:58:57 IST" name="logoutFromAppln" finished-at="2026-01-08T12:58:57 IST" duration-ms="15" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Driver must be set]]>
@@ -372,7 +378,7 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- logoutFromAppln -->
-        <test-method is-config="true" signature="logout()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:53:55 IST" name="logout" finished-at="2026-01-08T12:53:55 IST" duration-ms="1" status="FAIL">
+        <test-method is-config="true" signature="logout()[pri:0, instance:calender.Calender@294425a7]" started-at="2026-01-08T12:58:57 IST" name="logout" finished-at="2026-01-08T12:58:57 IST" duration-ms="2" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.quit()" because "this.driver" is null]]>
