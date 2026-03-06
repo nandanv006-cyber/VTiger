@@ -41,6 +41,7 @@ public class Contact extends BaseClass{
 //			System.out.println("Verified");
 //		else
 //			System.out.println("Not Verified");
+		
 
 	}
 	@Test(groups = {"regression","smoke"})
